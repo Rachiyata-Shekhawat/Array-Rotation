@@ -14,6 +14,8 @@ function showOriginalArrayHandler() {
   if(array.length == 0) {
     alert("Array is empty");
   } else {
+    document.getElementById("solution").style.display = "block";
+    document.getElementById("originalArrayDisplayIntro").style.display = "block";
     document.getElementById("originalArrayDisplay").innerText = "[" + array + "]" ;
   }
   
@@ -26,6 +28,10 @@ function showSolutionHandler() {
   } else if (array.length == 1) {
     alert("There should be atleast 2 elements in your array");
   } else {
+
+    document.getElementById("solution").style.display = "block";
+    document.getElementById("solutionDisplayIntro").style.display = "block";
+
     const rotationCount = prompt("Enter the number of rotation you want !", 2);
 
     for(j=0; j<rotationCount; j++) {

@@ -1,0 +1,66 @@
+/* ======================================= common styling ============================================ */
+.intro,
+#problem,
+#solution {
+  margin: 2% 5%;
+  padding: 2%;
+}
+
+input,
+button {
+  padding: 0.5%;
+}
+
+#problem,
+input,
+button,
+#solution {
+  border: 1px solid black;
+}
+
+input,
+button {
+  border-radius: 13px;
+}
+
+#problem,
+#solution {
+  box-shadow: 2px 2px 8px 0px black;
+}
+
+#solution,
+#originalArrayDisplayIntro,
+#solutionDisplayIntro {
+  display: none;
+}
+
+.intro,
+#problem,
+#solution {
+  font-size: 1.3rem;
+}
+
+
+/* ======================================= main styling ============================================ */
+
+h1 {
+  font-size: 2.6rem;
+  text-align: center;
+  color: red;
+}
+
+input:focus {
+  border-color: #f158589e;
+  outline: #f158589e;
+}
+
+form button {
+  margin: 0;
+}
+
+button {
+  margin-top: 2%;
+  margin-right: 1%;
+  border-style: solid;
+  background: #f158589e;
+}
