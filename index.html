@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <meta charset="UTF-8">
@@ -8,13 +9,14 @@
   <title>Front Page Sample 1</title>
 
   <!-- link for fav icon in title -->
-  <link rel="shortcut icon" href="favicon.ico"> 
+  <link rel="shortcut icon" href="favicon.ico">
 
   <!-- link for stylesheets -->
   <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  
+
 </head>
+
 <body>
   <h1>Array Rotation</h1>
   <p>This project rotates the array of size N by K times.</p>
@@ -23,16 +25,20 @@
     <!-- User's Array -->
     <p>Create your own Array here :</p>
     <form action="">
-      <input type="text">
-      <button type="submit">Add Element</button>
+      <input type="text" id="element">
+      <button type="button" id="addElement" onclick="addElementHandler()">Add Element</button>
     </form>
-    <button>Solution</button>
+    <button onclick="showOriginalArrayHandler()">Show Original Array</button>
+    <button onclick="showSolutionHandler()">Solution</button>
   </div>
 
   <!-- Solution -->
   <div>
-    <p></p>
+    <p id="originalArrayDisplay"></p>
+    <p id="solutionDisplay"></p>
   </div>
 
 </body>
+<script src="assets/js/index.js"></script>
+
 </html>
